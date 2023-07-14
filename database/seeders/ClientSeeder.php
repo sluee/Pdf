@@ -13,7 +13,7 @@ class ClientSeeder extends Seeder
      */
     public function run(): void
     {
-        Client::factory(30)->create();
+        // Client::factory(30)->create();
 
         $cl = [
             [
@@ -34,6 +34,39 @@ class ClientSeeder extends Seeder
                 'birth_date' => '2002-06-24',
                 'phone_number' => '09467137867',
                 'email' => 'eulagabas00@gmail.com',
+                'initial_deposit' => '10000'
+
+            ],
+            [
+                'last_name' => 'Gabas',
+                'first_name' => 'Eula',
+                'middle_name' => 'Requierme',
+                'address' => ' Sagbayan, Bohol',
+                'birth_date' => '2002-06-24',
+                'phone_number' => '09467137867',
+                'email' => 'gabaseula@gmail.com',
+                'initial_deposit' => '10000'
+
+            ],
+            [
+                'last_name' => 'Gabas',
+                'first_name' => 'Eunizel',
+                'middle_name' => 'Requierme',
+                'address' => ' Sagbayan, Bohol',
+                'birth_date' => '2002-06-24',
+                'phone_number' => '09467137867',
+                'email' => 'eunizelgabas06@gmail.com',
+                'initial_deposit' => '10000'
+
+            ],
+            [
+                'last_name' => 'Gabas',
+                'first_name' => 'Eunizel',
+                'middle_name' => 'Requierme',
+                'address' => ' Sagbayan, Bohol',
+                'birth_date' => '2002-06-24',
+                'phone_number' => '09467137867',
+                'email' => 'geunizel@gmail.com',
                 'initial_deposit' => '10000'
 
             ],

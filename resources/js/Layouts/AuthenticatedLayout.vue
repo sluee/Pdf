@@ -6,6 +6,7 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
+import FlashMessage from '@/Components/FlashMessage.vue'
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -34,6 +35,9 @@ const showingNavigationDropdown = ref(false);
                                 </NavLink>
                                 <NavLink href="/clients" :active="$page.url.startsWith('/clients')">
                                     Clients
+                                </NavLink>
+                                <NavLink href="/admin" :active="$page.url.startsWith('/admin')">
+                                    Admin
                                 </NavLink>
                             </div>
                         </div>
@@ -146,6 +150,7 @@ const showingNavigationDropdown = ref(false);
                 </div>
             </header>
 
+            <FlashMessage :messages="$page.props.messages"/>
             <!-- Page Content -->
             <main>
                 <slot />
